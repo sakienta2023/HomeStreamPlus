@@ -1,0 +1,564 @@
+/* General styling */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, p, a { 
+margin: 0; 
+padding: 0; 
+font-family: 'Arial', sans-serif; 
+}
+
+body { 
+line-height: 1.6; 
+background: #f4f4f4; 
+}
+
+header { 
+background: #333;
+color: #fff; 
+padding: 10px 0; 
+text-align: center; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding-left: 10px;
+}
+
+.logo h1 {
+    align-self: center;
+}
+.logo img {
+height: 160;
+/* width: 187px;*/
+ /*flex: 1;*/
+/* background-color: pink;*/
+margin-left: 20px;
+}
+
+nav {
+    align-self: center;
+}
+
+nav ul { 
+list-style: none; 
+display: flex; 
+justify-content: center; 
+}
+
+nav ul li { 
+margin: 0 20px; 
+} 
+
+nav ul li a { 
+color: #fff; 
+text-decoration: none; 
+font-size: 18px; 
+}
+
+.hero {
+height: 90vh; 
+display: flex; 
+align-items: center; 
+justify-content: center; 
+background:linear-gradient(rgba(0,0,0,0.5),#6B3F25),url("../Images/IMG-20240730-WA0037.jpeg") no-repeat center center/cover;
+text-align: center;
+} 
+
+.hero-content {
+    align-items: center;
+    justify-content: center;
+} 
+
+.explore {
+    align-items: center;
+}
+
+.hero-content h2 { 
+color: #A5A2A4; 
+font-size: 3em; 
+margin-bottom: 20px; 
+}
+
+.hero-content p { 
+color: #ddd; 
+font-size: 1.2em; 
+margin-bottom: 50px;
+}
+
+.hero-content a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: orange;
+    margin-top: 50px;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+/* What We Do Section */
+.what-we-do {
+    background-color: #f9f9f9;
+    padding: 60px;
+    text-align: center;
+}
+
+.what-we-do h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.what-we-do p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.what-we-do-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.what-we-do-item {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.what-we-do-item:hover {
+    transform: translateY(-10px);
+}
+
+.what-we-do-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.what-we-do-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.what-we-do-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Responsive styles for What We Do */
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 480px) {
+    
+}
+
+.about, .services, .contact { 
+padding: 60px; 
+text-align: center; 
+} 
+
+.service-container { 
+display: flex; 
+justify-content: space-around; 
+flex-wrap: wrap; 
+}
+
+.service-item { 
+background: #fff; 
+padding: 20px; 
+margin: 15px; 
+width: 30%; 
+border-radius: 8px; 
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.reviews { 
+padding: 60px; 
+background-color: #333; 
+color: white; 
+}
+
+.slider { 
+display: flex; 
+overflow: hidden; 
+justify-content: center; 
+}
+
+.slide { 
+min-width: 100%; 
+transition: 0.5s ease-in-out; 
+}
+
+blockquote { 
+font-size: 1.5em; 
+}
+
+.contact ul li {
+    list-style: none;
+}
+
+/* **** Click to Call *** */
+
+.fixed-icons { 
+position: fixed; 
+left: 20px; 
+bottom: 40px; 
+display: flex; 
+flex-direction: column; 
+gap: 10px; 
+}
+
+.fixed-icons a .fab, .fas { 
+width: 40px; 
+height: 40px; 
+border-radius: 50%; 
+}
+
+.fa-whatsapp {
+color: #25d366;
+}
+
+.whatsapp:hover {
+color: #20b357;
+}
+
+.fa-phone {
+color:#007bff;
+}
+
+.phone:hover {
+color: #007bff; 
+}
+
+.fa-envelope {
+color: #ff5722;
+}
+
+.mail-button { 
+color: #ff5722; 
+}
+
+.fa-facebook { 
+color: #3b5998; 
+}
+
+.fa-linkedin { 
+color: #0077b5; 
+}
+
+.fa-instagram {
+color: #e4405f; 
+}
+
+.fa-youtube {
+color: #ff0000; 
+}
+
+.fa-twitter {
+color: #1da1f2; 
+}
+
+.reviews {
+    margin-bottom: 80px;
+}
+
+
+/* Call to Action Section */
+.cta-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/istockphoto-1182423333-612x612.jpg') no-repeat center center/cover;
+    padding: 80px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.cta-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.cta-btn {
+    background-color: #ff6b00;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff8f33;
+}
+
+/* Responsive styles for CTA Section */
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 480px) {
+    
+
+
+footer {
+    text-align: center;
+    /*background-color: #653C23;*/
+    padding: 8px 0;
+}
+
+
+/* ***** Responsive Styles *** */
+
+/* Base styles for larger screens */ 
+body { 
+font-size: 16px; 
+}
+
+/* General styles for tablets and smaller desktops (768px and above) */ 
+
+@media (max-width: 1200px) {
+
+.service-container { 
+flex-direction: column; 
+align-items: center; 
+}
+
+.logo img {
+   
+}
+
+.service-item { 
+width: 80%; 
+}
+
+.fixed-icons a .fab, .fas { 
+width: 35px; 
+height: 35px; 
+}
+
+}
+
+@media(min-width:768px){
+  
+}
+
+/* For mobile devices (max-width 768px) */ 
+
+@media (max-width: 768px) { 
+
+body { 
+font-size: 14px; 
+}
+
+header { 
+text-align: center; 
+padding: 15px 0; 
+}
+
+nav {
+    display: none;
+}
+
+nav ul { 
+flex-direction: column; 
+gap: 10px; 
+}
+
+.hero-content h2 { 
+font-size: 2em; 
+text-align: center; 
+}
+
+.hero-content p { 
+font-size: 1.1em; 
+text-align: center; 
+} 
+
+.hero-content a {
+    text-align: center;
+}
+
+.what-we-do-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .what-we-do-item {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+.service-container { 
+flex-direction: column; 
+align-items: center;
+}
+
+.service-item { 
+width: 90%; 
+}
+
+.slider { 
+flex-direction: column; 
+}
+
+.cta-content h2 {
+        font-size: 2em;
+    }
+
+    .cta-content p {
+        font-size: 1.1em;
+    }
+
+    .cta-btn {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+
+.fixed-icons { 
+left: 10px; 
+bottom: 20px; 
+}
+
+.fixed-icons a .fab, .fas { 
+width: 30px; 
+height: 30px; 
+}
+}
+
+/* For very small mobile devices (max-width 480px) */
+ @media (max-width: 480px) { 
+ 
+ body { 
+ font-size: 13px; 
+ }
+ 
+ .logo {
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .logo h1 {
+     font-size: 2rem;
+ }
+ 
+ .logo img {
+  /*  width: 230px;*/
+    width: 187;
+    background-color: pink;
+}
+
+ 
+ .hero-content h2 { 
+ font-size: 1.8em; 
+ } 
+ 
+ .hero-content p { 
+ font-size: 1em; 
+ }
+ 
+ .hero-content a {
+     text-align: center;
+ }
+ 
+ .what-we-do h2 {
+        font-size: 1.8rem;
+    }
+
+    .what-we-do p {
+        font-size: 1.1em;
+    }
+
+    .what-we-do-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+ 
+ 
+ .service-item { 
+ width: 90%; 
+ margin: 10px 0; 
+ }
+ 
+ .about, .services, .contact { 
+ padding: 40px; 
+ }
+ 
+ .cta-content h2 {
+        font-size: 1.8em;
+    }
+
+    .cta-content p {
+        font-size: 1em;
+    }
+
+    .cta-btn {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+}
+ 
+ .fixed-icons { 
+ left: 5px; 
+ bottom: 10px; 
+ } 
+ 
+ .fixed-icons a .fab, .fas { 
+ width: 25px; 
+ height: 25px; 
+ }
+ 
+ }
+ 
+ /* For larger desktops (min-width 1200px) */ 
+ 
+ @media (min-width: 1200px) { 
+ 
+ .service-container { 
+ flex-direction: row; 
+ justify-content: space-between; 
+ }
+ 
+ .service-item { 
+ width: 30%; 
+ }
+ 
+ .hero-content h2 { 
+ font-size: 3.5em; 
+ }
+ 
+ .hero-content p { 
+ font-size: 1.3em; 
+ } 
+ 
+ .fixed-icons a .fab, .fas { 
+ width: 40px; 
+ height: 40px; 
+ }
+ 
+ }
