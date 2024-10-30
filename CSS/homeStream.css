@@ -12,6 +12,14 @@ padding: 0;
 font-family: 'Arial', sans-serif; 
 }
 
+h2 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 0.97rem;
+}
+
 body { 
 line-height: 1.6; 
 background: #f4f4f4; 
@@ -47,25 +55,86 @@ height: 160;
 margin-left: 20px;
 }
 
-nav {
+.nav-row {
     align-self: center;
 }
 
-nav ul { 
+.nav-row ul { 
 list-style: none; 
 display: flex; 
 justify-content: center; 
 }
 
-nav ul li { 
+.nav-row ul li { 
 margin: 0 20px; 
 } 
 
-nav ul li a { 
+.nav-row ul li a { 
 color: #fff; 
 text-decoration: none; 
 font-size: 18px; 
 }
+
+
+/* ***** Nav-Col ***** */
+
+#menuButton, #closeButton {    
+border: none;
+background-color: transparent;
+cursor: pointer;
+font-size: 30px;
+color:white ;
+font-weight: bold;
+}
+
+#navMenu {
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+width: 400px; /* Adjust the width as needed */
+background-color: #9B7159;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+transition: transform 0.3s ease-in-out;
+transform: translateX(100%); /* Start off hidden to the right */
+}
+
+.hidden { 
+align-items: center;
+justify-content: space-between;
+}
+
+nav ul li {
+list-style: none;
+margin: 90px;
+}
+
+nav ul li a {
+text-decoration: none;
+color: white;
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.hidden {
+display: none;
+}
+
+#navMenu.visible {
+transform: translateX(0); /* Slide in from the right */
+}
+
+#closeButton,#menuButton {
+position: absolute;
+top: 45px;
+right: 20px;
+color: white;
+
+}
+
+
 
 .hero {
 height: 90vh; 
@@ -116,12 +185,12 @@ margin-bottom: 50px;
 }
 
 .what-we-do h2 {
-    font-size: 2.5rem;
+    /*font-size: 2.5rem;*/
     margin-bottom: 20px;
 }
 
 .what-we-do p {
-    font-size: 1.2em;
+    font-size: 0.97rem;
     margin-bottom: 40px;
     color: #555;
 }
@@ -136,6 +205,7 @@ margin-bottom: 50px;
     background: #fff;
     padding: 20px;
     margin: 10px;
+    text-align: center;
     width: 30%;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -164,13 +234,6 @@ margin-bottom: 50px;
 }
 
 /* Responsive styles for What We Do */
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 480px) {
-    
-}
 
 .about, .services, .contact { 
 padding: 60px; 
@@ -227,12 +290,12 @@ display: flex;
 flex-direction: column; 
 gap: 10px; 
 }
-
+/*
 .fixed-icons a .fab, .fas { 
 width: 40px; 
 height: 40px; 
 border-radius: 50%; 
-}
+}*/
 
 .fa-whatsapp {
 color: #25d366;
@@ -318,13 +381,6 @@ color: #1da1f2;
 }
 
 /* Responsive styles for CTA Section */
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 480px) {
-    
-
 
 footer {
     text-align: center;
@@ -340,202 +396,7 @@ body {
 font-size: 16px; 
 }
 
-/* General styles for tablets and smaller desktops (768px and above) */ 
-
-@media (max-width: 1200px) {
-
-.service-container { 
-flex-direction: column; 
-align-items: center; 
-}
-
-.logo img {
-   
-}
-
-.service-item { 
-width: 80%; 
-}
-
-.fixed-icons a .fab, .fas { 
-width: 35px; 
-height: 35px; 
-}
-
-}
-
-@media(min-width:768px){
-  
-}
-
-/* For mobile devices (max-width 768px) */ 
-
-@media (max-width: 768px) { 
-
-body { 
-font-size: 14px; 
-}
-
-header { 
-text-align: center; 
-padding: 15px 0; 
-}
-
-nav {
-    display: none;
-}
-
-nav ul { 
-flex-direction: column; 
-gap: 10px; 
-}
-
-.hero-content h2 { 
-font-size: 2em; 
-text-align: center; 
-}
-
-.hero-content p { 
-font-size: 1.1em; 
-text-align: center; 
-} 
-
-.hero-content a {
-    text-align: center;
-}
-
-.what-we-do-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .what-we-do-item {
-        width: 80%;
-        margin-bottom: 30px;
-    }
-
-.service-container { 
-flex-direction: column; 
-align-items: center;
-}
-
-.service-item { 
-width: 90%; 
-}
-
-.slider { 
-flex-direction: column; 
-}
-
-.cta-content h2 {
-        font-size: 2em;
-    }
-
-    .cta-content p {
-        font-size: 1.1em;
-    }
-
-    .cta-btn {
-        font-size: 1em;
-        padding: 12px 25px;
-    }
-
-.fixed-icons { 
-left: 10px; 
-bottom: 20px; 
-}
-
-.fixed-icons a .fab, .fas { 
-width: 30px; 
-height: 30px; 
-}
-}
-
-/* For very small mobile devices (max-width 480px) */
- @media (max-width: 480px) { 
- 
- body { 
- font-size: 13px; 
- }
- 
- .logo {
-     justify-content: center;
-     align-items: center;
- }
- 
- .logo h1 {
-     font-size: 2rem;
- }
- 
- .logo img {
-  /*  width: 230px;*/
-    width: 187;
-    background-color: pink;
-}
-
- 
- .hero-content h2 { 
- font-size: 1.8em; 
- } 
- 
- .hero-content p { 
- font-size: 1em; 
- }
- 
- .hero-content a {
-     text-align: center;
- }
- 
- .what-we-do h2 {
-        font-size: 1.8rem;
-    }
-
-    .what-we-do p {
-        font-size: 1.1em;
-    }
-
-    .what-we-do-item {
-        width: 100%;
-        margin-bottom: 20px;
-    }
- 
- 
- .service-item { 
- width: 90%; 
- margin: 10px 0; 
- }
- 
- .about, .services, .contact { 
- padding: 40px; 
- }
- 
- .cta-content h2 {
-        font-size: 1.8em;
-    }
-
-    .cta-content p {
-        font-size: 1em;
-    }
-
-    .cta-btn {
-        font-size: 0.9em;
-        padding: 10px 20px;
-    }
-}
- 
- .fixed-icons { 
- left: 5px; 
- bottom: 10px; 
- } 
- 
- .fixed-icons a .fab, .fas { 
- width: 25px; 
- height: 25px; 
- }
- 
- }
- 
- /* For larger desktops (min-width 1200px) */ 
+/* For larger desktops (min-width 1200px) */ 
  
  @media (min-width: 1200px) { 
  
@@ -562,3 +423,226 @@ height: 30px;
  }
  
  }
+
+
+/* General styles for tablets and smaller desktops (768px and above) */ 
+
+@media (max-width: 1200px) {
+
+.service-container { 
+flex-direction: column; 
+align-items: center; 
+}
+
+.service-item { 
+width: 80%; 
+}
+
+.fixed-icons a .fab, .fas { 
+font-size: 30px;
+}
+
+}
+
+@media(min-width:768.1px){
+.nav-col {
+display: none;
+    }
+}
+
+/* For mobile devices (max-width 768px) */ 
+
+@media (max-width: 768px) { 
+
+body { 
+font-size: 14px; 
+}
+
+header { 
+text-align: center; 
+padding: 15px 0; 
+}
+
+.nav-row {
+    display: none;
+}
+
+
+#navMenu { 
+width: 700px;
+/*gap: 10px; */
+}
+/*
+#navMenu ul li {
+margin: 92px;
+}*/
+/*Conflicts with with open/close functionality at more the 170px*/
+
+#navMenu ul li a {
+ font-size: 2rem;
+}
+
+.hero-content h2 { 
+font-size: 2em; 
+text-align: center; 
+}
+
+.hero-content p { 
+font-size: 1.1em; 
+text-align: center; 
+} 
+
+.hero-content a {
+    text-align: center;
+}
+
+.what-we-do-container {
+flex-direction: column;
+align-items: center;
+}
+
+.what-we-do-item {
+width: 80%;
+margin-bottom: 30px;
+}
+
+.service-container { 
+flex-direction: column; 
+align-items: center;
+}
+
+.service-item { 
+width: 90%; 
+}
+
+.slider { 
+flex-direction: column; 
+}
+
+.cta-content h2 {
+font-size: 2em;
+}
+
+.cta-content p {
+font-size: 1.1em;
+}
+
+.cta-btn {
+font-size: 1em;
+padding: 12px 25px;
+}
+
+.fixed-icons { 
+left: 10px; 
+bottom: 20px; 
+}
+
+.fixed-icons a .fab, .fas { 
+font-size: 25px;
+}
+}
+
+/* For very small mobile devices (max-width 480px) */
+ @media (max-width: 480px) { 
+ 
+body { 
+font-size: 13px; 
+}
+ 
+.logo {
+justify-content: center;
+align-items: center;
+}
+ 
+.logo h1 {
+font-size: 2rem;
+}
+ 
+.logo img {
+width: 187;
+background-color: pink;
+}
+
+#navMenu { 
+width: 400px;
+/*gap: 10px; */
+}
+
+#navMenu ul li {
+margin: 72px;
+
+#navMenu ul li a {
+ font-size: 1rem;
+}
+ 
+.hero-content h2 { 
+font-size: 1.8em; 
+} 
+ 
+.hero-content p { 
+font-size: 1em; 
+}
+
+.hero-content a {
+text-align: center;
+}
+ 
+.what-we-do h2 {
+/*font-size: 1.8rem;*/
+}
+
+.what-we-do p {
+font-size: 0.97rem;
+}
+
+.what-we-do-item {
+width: 100%;
+margin-bottom: 20px;
+}
+ 
+ 
+.service-item { 
+width: 90%; 
+margin: 10px 0; 
+}
+ 
+ /*Review From here */
+   
+.about, .services, .contact {   
+padding: 40px;   
+}
+
+.cta-content h2 {         
+font-size: 1.8em;     
+}
+     
+.cta-content p {         
+font-size: 1em;     
+}
+     
+.cta-btn {         
+font-size: 0.9em;         
+padding: 10px 20px;
+}
+    
+    
+/* Removed closing curl brace 0933_301024 */
+ 
+ 
+.fixed-icon {
+ left: 5px; 
+ bottom: 10px
+} 
+     
+.fixed-icons a .fab, .fa{
+}
+
+
+
+.fa-whatsapp {
+    font-size: 4rem;
+}
+ 
+}
+ 
+ 

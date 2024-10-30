@@ -20,15 +20,32 @@
             <img src="Images/HomestreamPlus01.1.1.png" alt="">
            
         </div>
-        <nav>
+        <div class="nav-row">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">About Us</a></li>
             </ul>
-        </nav>
+        </div>
+        
+    <!-- Nav Column --> 
+    
+ <div class="nav-col">
+  <button id="menuButton"><i class="fa-solid fa-bars"></i></button>
+  <nav id="navMenu" class="hidden">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#about">About Us</a></li>
+    </ul>
+    <button class="hidden" id="closeButton"><i class="fa-solid fa-xmark"></i></button>
+  </nav>
+ </div>       
+        
       </section>
     </header>
 
@@ -134,6 +151,7 @@
     </section>
 
     <!-- Social Media and Contact Icons -->
+    
     <div class="fixed-icons">
         <a href="https://wa.me/+256706002812" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
         <a href="https://www.facebook.com/homestreamplus" class="facebook" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -148,7 +166,7 @@
         <p>&copy; 2024 Homestream Plus. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js">
+    <script src="HSJs/hs.script.js">
         
         let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
