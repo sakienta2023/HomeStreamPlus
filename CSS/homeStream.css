@@ -35,34 +35,33 @@ text-align: center;
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+
 
 .logo {
-    display: flex;
     justify-content: space-between;
-    flex: 1;
-    padding-left: 10px;
-}
-
-.logo h1 {
+    padding: 10px;
+    margin: 5px;
     align-self: center;
 }
+
 .logo img {
 height: 160;
-/* width: 187px;*/
- /*flex: 1;*/
-/* background-color: pink;*/
 margin-left: 20px;
+cursor: pointer;
 }
 
 .nav-row {
     align-self: center;
+    flex: 1;
 }
 
 .nav-row ul { 
 list-style: none; 
 display: flex; 
-justify-content: center; 
+justify-content: space-evenly; 
 }
 
 .nav-row ul li { 
@@ -134,8 +133,6 @@ color: white;
 
 }
 
-
-
 .hero {
 height: 90vh; 
 display: flex; 
@@ -177,6 +174,27 @@ margin-bottom: 50px;
     border-radius: 3px;
 }
 
+.about h2 {
+    color: #A5A2A4;
+}
+
+.about p {
+    color: #555;
+ }
+ 
+
+.services h2 {
+    color: #A5A2A4;
+}
+
+.services h3 {
+    color: #A5A2A4;
+}
+
+.services p {
+   color: #555;
+}
+
 /* What We Do Section */
 .what-we-do {
     background-color: #f9f9f9;
@@ -186,8 +204,15 @@ margin-bottom: 50px;
 
 .what-we-do h2 {
     /*font-size: 2.5rem;*/
+    color: #A5A2A4;
     margin-bottom: 20px;
 }
+
+.what-we-do h3 {
+    color: #A5A2A4;
+}
+
+
 
 .what-we-do p {
     font-size: 0.97rem;
@@ -257,8 +282,9 @@ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
 .reviews { 
 padding: 60px; 
-background-color: #333; 
+background-color: #929292; 
 color: white; 
+justify-items: center;
 }
 
 .slider { 
@@ -270,15 +296,22 @@ justify-content: center;
 .slide { 
 min-width: 100%; 
 transition: 0.5s ease-in-out; 
+text-align: center;
 }
 
 blockquote { 
 font-size: 1.5em; 
+/* text-align: center; */
+}
+
+.contact p {
+    font-size: 1em;
 }
 
 .contact ul li {
     list-style: none;
 }
+
 
 /* **** Click to Call *** */
 
@@ -417,10 +450,10 @@ font-size: 16px;
  font-size: 1.3em; 
  } 
  
- .fixed-icons a .fab, .fas { 
+ /* .fixed-icons a .fab, .fas { 
  width: 40px; 
  height: 40px; 
- }
+ } */
  
  }
 
@@ -448,6 +481,20 @@ font-size: 30px;
 .nav-col {
 display: none;
     }
+
+.fixed-icons {
+flex-direction: row;
+
+}
+
+.fixed-icons a .fab, .fas { 
+font-size: 25px;
+text-align: center;
+justify-content: space-evenly;
+width: 100px;
+}
+
+
 }
 
 /* For mobile devices (max-width 768px) */ 
