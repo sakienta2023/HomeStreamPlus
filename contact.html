@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get in touch with Homestream Plus. Contact us for IPTV service inquiries, support, and more.">
+    <meta name="keywords" content="Contact Homestream Plus, IPTV support Uganda, streaming services inquiry">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <title>Contact Us | Homestream Plus</title>
+    <link rel="stylesheet" href="CSS/contact.css">
+</head>
+
+<body>
+
+    <!-- Navigation Section -->
+
+    <header>
+        <section class="navbar">
+            <div class="logo">
+                <!--   <h1>Homestream Plus</h1> -->
+                <img src="Images/HomestreamPlus01.1.1.png" alt="">
+
+            </div>
+            <div class="nav-row">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Nav Column -->
+
+            <div class="nav-col">
+                <button id="menuButton"><i class="fa-solid fa-bars"></i></button>
+                <nav id="navMenu" class="hidden">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                    <button class="hidden" id="closeButton"><i class="fa-solid fa-xmark"></i></button>
+                </nav>
+            </div>
+
+        </section>
+    </header>
+
+
+    <!-- Contact Page Header -->
+
+    <div class="contact-page-header">
+        <h1>Contact Us</h1>
+        <p>Have questions? Reach out to us via email, phone, or the form below. We’re here to help you with all your
+            streaming needs!</p>
+    </div>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="post">
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <input type="hidden" name="apikey" value="5f911b8e-8215-4be7-8eae-43351888dbe0">
+                <input type="hidden" name="redirect" value="https://homestream-plus.lovestoblog.com/Thankyou.html">
+                
+                <!-- <input type="hidden" name="subject" value="${name} sent a message from your website form"> -->
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="h-captcha" data-captcha="true"></div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info-section">
+        <h2>Other Ways to Reach Us</h2>
+        <p><strong>Phone:</strong> +256 700 123456</p>
+        <p><strong>Email:</strong> support@homestreamplus.com</p>
+        <!--  <p><strong>Address:</strong> Plot 12, Kampala Road, Kampala, Uganda</p> -->
+    </section>
+
+    <!-- Social Media Links -->
+    <section class="social-media-section">
+        <h2>Connect with Us on Social Media</h2>
+        <a href="https://www.facebook.com/homestreamplus" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/homestreamplus" target="_blank">Instagram</a> |
+        <a href="https://wa.me/+256706002812" target="_blank">WhatsApp</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Homestream Plus. All rights reserved.</p>
+    </footer>
+
+    <script src="HSJs/hs.script.js"></script>
+</body>
+
+</html>

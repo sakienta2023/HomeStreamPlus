@@ -1,0 +1,182 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+header { 
+background: #333;
+color: #fff; 
+padding: 10px 0; 
+text-align: center; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-left: 10px;
+}
+
+.logo h1 {
+    align-self: center;
+}
+.logo img {
+height: 160px;
+margin-left: 20px;
+}
+
+.nav-row {
+    align-self: center;
+    flex: 1;
+}
+
+.nav-row ul { 
+list-style: none; 
+display: flex; 
+justify-content: space-evenly; 
+}
+
+.nav-row ul li { 
+margin: 0 20px; 
+} 
+
+.nav-row ul li a { 
+color: #fff; 
+text-decoration: none; 
+font-size: 18px; 
+}
+
+
+/* ***** Nav-Col ***** */
+
+#menuButton, #closeButton {    
+border: none;
+background-color: transparent;
+cursor: pointer;
+font-size: 30px;
+color:white ;
+font-weight: bold;
+}
+
+#navMenu {
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+width: 400px; /* Adjust the width as needed */
+background-color: #9B7159;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+transition: transform 0.3s ease-in-out;
+transform: translateX(100%); /* Start off hidden to the right */
+}
+
+.hidden { 
+align-items: center;
+justify-content: space-between;
+}
+
+nav ul li {
+list-style: none;
+margin: 90px;
+}
+
+nav ul li a {
+text-decoration: none;
+color: white;
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.hidden {
+display: none;
+}
+
+#navMenu.visible {
+transform: translateX(0); /* Slide in from the right */
+}
+
+#closeButton,#menuButton {
+position: absolute;
+top: 45px;
+right: 20px;
+color: white;
+
+}
+
+/* **** Navigation Header Closes *** */
+
+
+/* Header */
+.faq-page-header {
+   /* background-color: #1e1e1e;*/
+    color: #1e1e1e;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.faq-page-header h1 {
+    font-size: 2.5em;
+    margin: 0 0 10px;
+}
+
+.faq-page-header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* FAQ Section */
+.faq-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.faq-item {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.faq-item h2 {
+    font-size: 1.5em;
+    color: #ff6b00;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Styles */
+
+@media(min-width:768.1px){
+    .nav-col {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-page-header h1 {
+        font-size: 2em;
+    }
+    
+    .nav-row {
+        display: none;
+    }
+}
